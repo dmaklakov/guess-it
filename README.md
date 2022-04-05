@@ -1,7 +1,3 @@
-# Original repository
-
-This project completelly can be found [here](https://github.com/Guess-it-JKU).
-
 
 # GuessIt
 
