@@ -1,3 +1,8 @@
+# Original repository
+
+This project completelly can be found [here](https://github.com/Guess-it-JKU).
+
+
 # GuessIt
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.10.
