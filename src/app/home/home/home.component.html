@@ -1,0 +1,180 @@
+<div class="container">
+    <div class="container__btn">
+        <button class="container__btn--green" (click) = "clickCreate()">CREATE</button>
+        <button class="container__btn--blue" (click) = "toggleModal()">JOIN</button>
+    </div>
+    
+    <div class="container__frame">
+        
+        <svg class="container__frame-3" viewBox="0 0 450 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Groups1">
+            <rect width="450" height="450" fill="#F38375"/>
+            <path d="M160.298 135.309H89C89 135.309 94.6886 68.2149 131.855 37.1316C169.021 6.04832 223.252 9.08083 223.252 9.08083C343.852 6.80645 362.435 103.24 360.918 122.042C359.401 140.844 354.85 157.376 343.852 172.458C332.854 187.539 268.382 229.236 261.935 255.094L258.901 293H186.845C186.845 275.058 188.59 235.458 195.568 220.599C202.546 205.739 224.513 186.466 234.5 178C249 167.5 281.277 150.77 283.552 122.042C285.828 93.3139 270.81 76.0236 227.424 73.9008C184.039 71.7781 164.596 113.955 160.298 135.309Z" fill="#FFE3E0"/>
+            <circle cx="225" cy="360" r="45" fill="#FFE3E0"/>
+            </g>
+            
+        </svg>
+            
+        <svg class="container__frame-2" viewBox="0 0 450 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Groups2" shape-rendering="crispEdges">
+            <g id="Group8">
+            <rect id="Rectangle 46" x="270" y="225" width="45" height="45" />
+            <rect id="Rectangle 45" x="405" y="270" width="45" height="45" />
+            <rect id="Rectangle 48" x="360" y="315" width="45" height="45" />
+            <rect id="Rectangle 45_2" x="405" y="225" width="45" height="45" />
+            <rect id="Rectangle 46_2" x="270" y="360" width="45" height="45" />
+            <rect id="Rectangle 47" x="360" y="180" width="45" height="45" />
+            <rect id="Rectangle 46_3" x="270" y="270" width="45" height="45" />
+            <rect id="Rectangle 48_2" x="360" y="270" width="45" height="45" />
+            <rect id="Rectangle 47_2" x="315" y="315" width="45" height="45" />
+            <rect id="Rectangle 45_3" x="405" y="360" width="45" height="45" />
+            <rect id="Rectangle 46_4" x="45" y="225" width="45" height="45" />
+            <rect id="Rectangle 45_4" x="180" y="270" width="45" height="45" />
+            <rect id="Rectangle 48_3" x="135" y="315" width="45" height="45" />
+            <rect id="Rectangle 44" y="315" width="45" height="45" />
+            <rect id="Rectangle 46_5" x="45" y="360" width="45" height="45" />
+            <rect id="Rectangle 47_3" x="135" y="180" width="45" height="45" />
+            <rect id="Rectangle 46_6" x="45" y="270" width="45" height="45" />
+            <rect id="Rectangle 48_4" x="135" y="270" width="45" height="45" />
+            <rect id="Rectangle 47_4" x="90" y="315" width="45" height="45" />
+            <rect id="Rectangle 46_7" x="45" width="45" height="45" />
+            <rect id="Rectangle 44_2" y="90" width="45" height="45" />
+            <rect id="Rectangle 46_8" x="45" y="135" width="45" height="45" />
+            <rect id="Rectangle 47_5" x="135" y="405" width="45" height="45" />
+            <rect id="Rectangle 45_5" x="180" y="135" width="45" height="45" />
+            <rect id="Rectangle 44_3" y="405" width="45" height="45" />
+            <rect id="Rectangle 45_6" x="405" y="45" width="45" height="45" />
+            <rect id="Rectangle 48_5" x="360" y="90" width="45" height="45" />
+            <rect id="Rectangle 45_7" x="405" width="45" height="45" />
+            <rect id="Rectangle 44_4" x="225" y="90" width="45" height="45" />
+            <rect id="Rectangle 47_6" x="360" y="405" width="45" height="45" />
+            <rect id="Rectangle 48_6" x="360" y="45" width="45" height="45" />
+            <rect id="Rectangle 45_8" x="405" y="135" width="45" height="45" />
+            </g>
+            <g id="Group7">
+            <rect id="Rectangle 44_5" x="225" y="315" width="45" height="45" />
+            <rect id="Rectangle 45_9" x="270" y="180" width="45" height="45" />
+            <rect id="Rectangle 44_6" x="225" y="225" width="45" height="45" />
+            <rect id="Rectangle 44_7" x="225" y="180" width="45" height="45" />
+            <rect id="Rectangle 44_8" x="225" y="360" width="45" height="45" />
+            <rect id="Rectangle 45_10" x="180" y="225" width="45" height="45" />
+            <rect id="Rectangle 45_11" x="180" y="360" width="45" height="45" />
+            <rect id="Rectangle 44_9" x="180" y="180" width="45" height="45" />
+            <rect id="Rectangle 45_12" x="180" y="315" width="45" height="45" />
+            <rect id="Rectangle 45_13" x="180" y="45" width="45" height="45" />
+            <rect id="Rectangle 48_7" x="135" y="90" width="45" height="45" />
+            <rect id="Rectangle 45_14" x="180" width="45" height="45" />
+            <rect id="Rectangle 48_8" x="135" y="45" width="45" height="45" />
+            <rect id="Rectangle 47_7" x="90" y="90" width="45" height="45" />
+            <rect id="Rectangle 48_9" x="135" width="45" height="45" />
+            <rect id="Rectangle 47_8" x="90" y="45" width="45" height="45" />
+            <rect id="Rectangle 46_9" x="270" width="45" height="45" />
+            <rect id="Rectangle 46_10" x="270" y="135" width="45" height="45" />
+            <rect id="Rectangle 46_11" x="270" y="45" width="45" height="45" />
+            <rect id="Rectangle 47_9" x="315" y="90" width="45" height="45" />
+            <rect id="Rectangle 44_10" x="225" width="45" height="45" />
+            <rect id="Rectangle 47_10" x="315" y="45" width="45" height="45" />
+            <rect id="Rectangle 47_11" x="315" y="135" width="45" height="45" />
+            <rect id="Rectangle 44_11" x="225" y="45" width="45" height="45" />
+            <rect id="Rectangle 46_12" x="270" y="90" width="45" height="45" />
+            </g>
+            <g id="Group6">
+            <rect id="Rectangle 46_13" x="315" y="180" width="45" height="45" />
+            <rect id="Rectangle 48_10" x="360" y="225" width="45" height="45" />
+            <rect id="Rectangle 47_12" x="315" y="270" width="45" height="45" />
+            <rect id="Rectangle 47_13" x="315" y="360" width="45" height="45" />
+            <rect id="Rectangle 44_12" x="405" y="180" width="45" height="45" />
+            <rect id="Rectangle 47_14" x="315" y="225" width="45" height="45" />
+            <rect id="Rectangle 44_13" x="225" y="270" width="45" height="45" />
+            <rect id="Rectangle 45_15" x="405" y="315" width="45" height="45" />
+            <rect id="Rectangle 46_14" x="270" y="315" width="45" height="45" />
+            <rect id="Rectangle 48_11" x="360" y="360" width="45" height="45" />
+            <rect id="Rectangle 45_16" x="45" y="180" width="45" height="45" />
+            <rect id="Rectangle 46_15" x="90" y="180" width="45" height="45" />
+            <rect id="Rectangle 44_14" y="225" width="45" height="45" />
+            <rect id="Rectangle 48_12" x="135" y="225" width="45" height="45" />
+            <rect id="Rectangle 47_15" x="90" y="270" width="45" height="45" />
+            <rect id="Rectangle 47_16" x="90" y="360" width="45" height="45" />
+            <rect id="Rectangle 44_15" y="180" width="45" height="45" />
+            <rect id="Rectangle 47_17" x="90" y="225" width="45" height="45" />
+            <rect id="Rectangle 44_16" y="270" width="45" height="45" />
+            <rect id="Rectangle 46_16" x="45" y="315" width="45" height="45" />
+            <rect id="Rectangle 44_17" y="360" width="45" height="45" />
+            <rect id="Rectangle 48_13" x="135" y="360" width="45" height="45" />
+            <rect id="Rectangle 46_17" x="45" y="45" width="45" height="45" />
+            <rect id="Rectangle 45_17" x="45" y="405" width="45" height="45" />
+            <rect id="Rectangle 46_18" x="90" y="405" width="45" height="45" />
+            <rect id="Rectangle 44_18" width="45" height="45" />
+            <rect id="Rectangle 47_18" x="90" y="135" width="45" height="45" />
+            <rect id="Rectangle 44_19" x="180" y="405" width="45" height="45" />
+            <rect id="Rectangle 47_19" x="90" width="45" height="45" />
+            <rect id="Rectangle 44_20" y="45" width="45" height="45" />
+            <rect id="Rectangle 45_18" x="180" y="90" width="45" height="45" />
+            <rect id="Rectangle 46_19" x="45" y="90" width="45" height="45" />
+            <rect id="Rectangle 44_21" y="135" width="45" height="45" />
+            <rect id="Rectangle 48_14" x="135" y="135" width="45" height="45" />
+            <rect id="Rectangle 45_19" x="270" y="405" width="45" height="45" />
+            <rect id="Rectangle 46_20" x="315" y="405" width="45" height="45" />
+            <rect id="Rectangle 48_15" x="360" width="45" height="45" />
+            <rect id="Rectangle 44_22" x="225" y="405" width="45" height="45" />
+            <rect id="Rectangle 44_23" x="405" y="405" width="45" height="45" />
+            <rect id="Rectangle 47_20" x="315" width="45" height="45" />
+            <rect id="Rectangle 45_20" x="405" y="90" width="45" height="45" />
+            <rect id="Rectangle 44_24" x="225" y="135" width="45" height="45" />
+            <rect id="Rectangle 48_16" x="360" y="135" width="45" height="45" />
+            </g>
+            </g>
+            </svg>
+            
+            
+            <svg class="container__frame-1"  viewBox="0 0 450 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Groups" shape-rendering="crispEdges">
+                <g id="Group5">
+                    <rect id="Rectangle 46" x="90" y="90" width="90" height="90"  />
+                    <rect id="Rectangle 45" x="360" y="180" width="90" height="90"  />
+                    <rect id="Rectangle 48" x="270" y="270" width="90" height="90"  />
+                </g>
+                <g id="Group4">
+                    <rect id="Rectangle 45_2" x="360" y="90" width="90" height="90"  />
+                    <rect id="Rectangle 44" y="270" width="90" height="90"  />
+                    <rect id="Rectangle 46_2" x="90" y="360" width="90" height="90"  />
+                </g>
+                <g id="Group3">
+                    <rect id="Rectangle 47" x="270" width="90" height="90"  />
+                    <rect id="Rectangle 46_3" x="90" y="180" width="90" height="90"  />
+                    <rect id="Rectangle 48_2" x="270" y="180" width="90" height="90"  />
+                    <rect id="Rectangle 47_2" x="180" y="270" width="90" height="90"  />
+                    <rect id="Rectangle 45_3" x="360" y="360" width="90" height="90"  />
+                </g>
+                <g id="Group2">
+                    <rect id="Rectangle 45_4" x="90" width="90" height="90"  />
+                    <rect id="Rectangle 46_4" x="180" width="90" height="90"  />
+                    <rect id="Rectangle 44_2" y="90" width="90" height="90"  />
+                    <rect id="Rectangle 48_3" x="270" y="90" width="90" height="90"  />
+                    <rect id="Rectangle 47_3" x="180" y="180" width="90" height="90"  />
+                    <rect id="Rectangle 47_4" x="180" y="360" width="90" height="90"  />
+                </g>
+                <g id="Group1">
+                    <rect id="Rectangle 44_3" width="90" height="90"  />
+                    <rect id="Rectangle 44_4" x="360" width="90" height="90"  />
+                    <rect id="Rectangle 47_5" x="180" y="90" width="90" height="90"  />
+                    <rect id="Rectangle 44_5" y="180" width="90" height="90"  />
+                    <rect id="Rectangle 45_5" x="360" y="270" width="90" height="90"  />
+                    <rect id="Rectangle 46_5" x="90" y="270" width="90" height="90"  />
+                    <rect id="Rectangle 44_6" y="360" width="90" height="90"  />
+                    <rect id="Rectangle 48_4" x="270" y="360" width="90" height="90"  />
+                </g>
+            </g>
+            </svg>
+        <div class="container__text">
+            <h2>How does it work?</h2>
+            <span>
+                This is a roundbased game, where in each round a medium of type audio, text or image will be shown.
+                The medium is layered with multiple filters, which will be reduced after some time. You and other players will compete in guessing
+                the word hidden in the medium. The player who gets the most points at the end, wins.
+            </span>
+        </div>
+    </div>
+</div>
+
+<app-modal *ngIf="showModal" (modalEvent)="handleModalEvent($event)"></app-modal>

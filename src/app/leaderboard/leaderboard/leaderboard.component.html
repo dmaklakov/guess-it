@@ -1,0 +1,13 @@
+<div class="leaderboard">
+		<div class="player" [class.player--green]="game.isYou(player.id)" *ngFor="let player of game.players" >
+			<div class="player__rank">
+                {{ game.getPlaceOnId(player.id) + 1 }} 
+            </div>
+            <div class="player__logo">
+                {{ player.icon }}
+            </div>
+            <div class="player__name">{{ player.name }}<span *ngIf="game.isYou(player.id)"><br><i>you</i></span></div>
+            <div class="player__points">{{ player.points }} Pt.</div>
+        </div>
+   <button class="leaderboard__btn" (click) = "leave()">CONTINUE</button>
+</div>

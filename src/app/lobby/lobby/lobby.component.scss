@@ -1,0 +1,110 @@
+@import "../../../styles/btn";
+@import "../../../styles/vars";
+@import "../../../styles/animations";
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &__btn {
+        transform: translateY(-50%);
+        background-color: $color-pink;
+        &:hover{
+            background-color: $color-pink-dark;
+        }
+        &[disabled]{
+            box-shadow: unset;
+            pointer-events: none;
+        }
+        &--wait::after {
+            content: '.';
+            animation: loading 1s steps(5, end) infinite;
+        }
+    }
+      
+}
+
+.game-room {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 25vw;
+    height: 40vh;
+    min-height: 40vh;
+    padding: 1em 0 2em 2em;
+    border-radius: 25px;
+    background-color: $color-blue;
+
+    &__text {
+        font-size: 1.2em;
+        margin-bottom: 2em;
+        color: white;
+    }
+
+    &__code {
+        position: absolute;
+        top: 0;
+        right: 2em;
+        height: 2em;
+        padding: 1em;
+        border-radius: 0 0 25px 25px;
+        background-color: $color-green;
+        color: white;
+    }
+
+    &__players {
+        overflow-y: auto;
+    } 
+
+    &__players::-webkit-scrollbar {
+        width: 12px;
+        border-radius: 10px;
+        background-color: $color-blue;
+    }
+
+    &__players::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+        background-color: $color-blue-light;
+    }
+}
+
+.player {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: min-content;
+    min-width: 50%;
+    margin-bottom: 1em;
+    border-radius: 25px;
+    background-color: white;
+
+    &__logo {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        margin: 1rem;
+        background-color: $color-pink;
+        border-radius: 50%;
+        line-height: 0;
+
+        &-text {
+            position: absolute;
+            bottom: 50%;
+            width: 100%;
+            text-align: center;
+            font-size: 1.2em;
+        }
+    }
+    &--green {
+        background-color: $color-green;
+        color: white;
+    }
+
+}
+
+
+ 
+  

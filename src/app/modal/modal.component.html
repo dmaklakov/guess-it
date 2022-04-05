@@ -1,0 +1,14 @@
+<div class="modal">
+    <div class="modal__content">
+        <div class="modal__header">
+          <h2>Join with Code</h2>
+          <div class="modal__close" (click)="close()">
+              <div class="modal__close-line"></div>
+          </div>
+        </div>
+        <div class="modal__body">
+            <input class="modal__input" placeholder="Gamecode" #input/>
+            <button class="modal__btn" (click)="sendCode(input.value)">OK</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="game-room">
+        <div class="game-room__text">Waiting for players ...</div>
+        <div class="game-room__code">Code: {{ game.gamecode }}</div>
+        <div class="game-room__players">
+            <div class="player" [class.player--green]="game.isYou(player.id)" *ngFor="let player of game.players" >
+				<div class="player__logo">
+                    <div class="player__logo-text">{{ player.icon }}</div>
+                </div>
+                <div class="player__name">{{ player.name }}<span *ngIf="game.isYou(player.id)"><br><i>you</i></span><span *ngIf="ifThisHost(player.id) && game.player.id != player.id"><br><i>host</i></span></div>
+            </div>
+        </div>
+    </div>
+    <button [hidden]="!game.host_player" class="container__btn" [class.container__btn--wait]="!isStartButton" [disabled]="!isStartButton" (click)="start()"> {{ isStartButton ? "START" : "WAIT" }}</button>
+</div>

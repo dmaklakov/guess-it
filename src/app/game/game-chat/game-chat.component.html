@@ -1,0 +1,21 @@
+<div class="chat-wrapper" #chatContainer >
+    <div class="chat">
+        <ng-container *ngFor="let message of messages" >
+            <div *ngIf="message.isRealPlayer; else announcement" class="player" [class.self]="game.isYou(message.player.id)">
+                <div class="player__logo">
+                    <div class="player__logo-text">{{ message.player.icon }} </div>
+                </div>
+                <div class="player__info">
+                    <div class="player__name">{{ message.player.name }} </div>
+                    <div class="player__guess">{{ message.message }}</div>
+                </div>
+            </div>
+         
+            <ng-template #announcement>
+                <div class="chat__announcement">
+                   {{message.player?.name}}{{message.message}}
+                </div>
+            </ng-template>
+        </ng-container>      
+    </div>
+</div>

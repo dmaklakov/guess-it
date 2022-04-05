@@ -1,0 +1,58 @@
+@import "./vars";
+html, body {
+    all: unset;
+    min-height: 100vh;
+    background: $color-white;
+}
+
+html * {font-family:'Fredoka One', cursive;}
+
+header {
+    padding-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    content: url("../assets/Logo.svg");
+    grid-area: header;
+}
+
+.content {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer"
+    ;
+}
+
+app-leaderboard, app-lobby, app-home{
+    grid-area: main;
+    align-self: center;
+}
+
+app-game {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.leave{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1em;
+    cursor: pointer;
+
+    &__text {
+        margin-left: auto;
+        margin-right: 1em;
+    }
+}
+
+[hidden] {
+	display: none !important;
+}

@@ -1,0 +1,15 @@
+<div class="content">
+  <header *ngIf="headerVisible"></header>
+  <router-outlet></router-outlet>
+  <footer>
+    <div [hidden]="leaveInvisible" class="leave"  (click) = "leave()">
+	  <span class="leave__text">Leave</span>
+      <svg width="38" height="55" viewBox="0 0 38 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.999999 6.89024L20.3362 1.3282V53.7944L0.999999 50.1577L0.999999 6.89024Z" stroke="black" stroke-width="2" stroke-linecap="round"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M23 48H37C37.5523 48 38 47.5523 38 47V6C38 5.44772 37.5523 5 37 5H23V7H36V46H23V48Z" fill="black"/>
+        <circle cx="16.4224" cy="26.4224" r="1.42241" fill="black"/>
+      </svg>
+        
+    </div>
+  </footer>
+</div>

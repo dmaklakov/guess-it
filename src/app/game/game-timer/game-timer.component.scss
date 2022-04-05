@@ -1,0 +1,48 @@
+
+@import "../../../styles/vars";
+@import "../../../styles/animations";
+.timer {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+
+    .time-circle {      
+        fill: none;
+        stroke: none;
+
+        &__background {
+            stroke-width: 7px;
+            stroke: rgb(211, 211, 211);
+        }
+        &__path {
+            stroke-width: 7px;
+            stroke-linecap: round;
+            transform: rotate(90deg);
+            transform-origin: center;
+            stroke: $color-green;
+        }
+    }
+
+    &__text  {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        font-size: 1.5em;
+       
+    }
+  
+    &__text:last-child {
+        z-index: -1;
+        transform: scale(1);
+        animation-name: pulse;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+  
+}

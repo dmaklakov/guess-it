@@ -1,0 +1,108 @@
+@import "../../../styles/vars";
+@import "../../../styles/animations";
+@import "../../../styles/btn";
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    &__btn {
+        display: flex;
+        flex-direction: column;
+        &--green {
+            background-color: $color-green;
+            &:hover{
+                background-color: $color-green-dark;
+            }
+        }
+        
+        &--blue {
+            margin-top: 3rem;
+            background-color: $color-blue;
+            &:hover{
+                background-color: $color-blue-dark;
+            }
+        }
+    }
+
+    &__frame {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+		max-width: 450px;
+        &-1 {
+            animation: slide-out 8s 7s ease-in 1 forwards running;
+        }
+
+        &-2 {
+            position: absolute;
+            transform: translate(-20px, -20px);
+            opacity: 0.8;
+            animation: slide-in 8s 7s ease-in 1 forwards running;
+        }
+
+        &-3 {
+            position: absolute;
+            transform: translate(-40px, -40px);
+            opacity: 0.6;
+            z-index: -10;
+            animation: slide-in2 1s 14s ease-in 1 forwards running;
+        }
+
+    }
+}
+
+#Group1,
+#Group2,
+#Group3,
+#Group4,
+#Group5 {
+    fill: #E37676;
+}
+
+#Group6,
+#Group7,
+#Group8 {
+    fill: #F7A399;
+}
+
+#Group2 {
+    animation: color2 2s 1s ease-in alternate 3 forwards running;
+}
+
+#Group3 {
+    animation: color3 2s 1s ease-in alternate 3 forwards running;
+}
+
+#Group4 {
+    animation: color4 2s 2s ease-in alternate 3 forwards running;
+}
+
+#Group5 {
+    animation: color5 2s 3s ease-in alternate 3 forwards running;
+}
+
+#Group6 {
+    animation: color1 2s 8s ease-in alternate 3 forwards running;
+}
+
+#Group7 {
+    animation: color2 2s 9s ease-in alternate 3 forwards running;
+}
+
+#Group8 {
+    animation: color3 2s 10s ease-in alternate 3 forwards running;
+}
+
+h2 {
+    color: black;
+}
+
+span  {
+    display: inline-block;
+    max-width: 450px;
+    word-wrap: break-word;
+    color: black;
+}

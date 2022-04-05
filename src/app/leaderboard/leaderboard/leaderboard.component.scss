@@ -1,0 +1,85 @@
+@import "../../../styles/btn";
+@import "../../../styles/vars";
+
+.leaderboard {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__btn {
+        background-color: $color-blue;
+        font-size: 2em;
+        margin-top: 2em;
+        &:hover{
+            background-color: $color-blue-dark;
+        }
+    }
+}
+
+.player {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    padding: 2em;
+    margin-bottom: 1.4em;
+    border-radius: 15px;
+    background-color: $color-blue;
+
+    &__logo {
+        position: relative;
+        width: 70px;
+        height: 70px;
+        margin-left: 1em;
+        margin-right: 1em;
+        background-color: $color-pink;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        font-size: 1.5em;
+        
+    }
+
+    &__name, &__points {
+        font-size: 2rem;
+        color: white;
+    }
+  
+    &__rank {
+        width: 100px;
+        height: 100px;
+        clip-path: polygon(50% 100%, 100% 64%, 89% 0, 11% 0, 0 64%);
+        display: grid;
+        position: relative;
+        place-items: center;
+        font-size: 3rem;
+        color: white;
+      
+    }
+
+    &:nth-child(1) &__rank {
+        background-color: #FFD700;
+        &::before {
+            width: 102px;
+            height: 102px;
+            clip-path: polygon(50% 100%, 100% 64%, 89% 0, 11% 0, 0 64%);
+            background-color: #ceaf04;
+        }
+    }
+
+    &:nth-child(2) &__rank {          
+        background-color: #C4C4C4;
+    }
+
+    &:nth-child(3) &__rank {
+        background-color: #A0522D;
+    }
+
+    &__points {
+        margin-left:auto;
+    }
+
+    &--green {
+        background-color: $color-green;
+    }
+}
